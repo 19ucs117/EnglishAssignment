@@ -1,0 +1,276 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+.header{
+    height: 10vh;
+    background-color: #111;
+    display: flex;
+    align-items:center;
+}
+.logo{
+    width: 40%;
+    color: #eee;
+    font-size: 2rem;
+    margin-left: 10%;
+    font-weight: 900;
+    font-family: 'Courier New', Courier, monospace;
+}
+.nav{
+    width: 60%;
+    text-align: right;
+}
+.nav ul li{
+    display: inline-block;
+    list-style-type: none;
+    margin-right: 10%;
+}
+.nav ul li a{
+    text-decoration: none;
+    font-weight: 600;
+    color: #999;
+    font-size: 1.2rem;
+}
+.navmob{
+    display: none;
+}
+.ic{
+    display: none;
+}
+.body{
+    width: 100%;
+    height: 90vh;
+    background-color: #eee;
+}
+.img,.intro{
+    width: 48%;
+    float: left;
+    height: 90vh;
+}
+.img{
+         width: 50%;
+    background-color:#eee;
+
+
+}
+.intro{
+    height: 80vh;
+    padding-top: 10vh;
+    padding-left:2%;
+    background-color:#eee;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.7rem;
+    text-transform: capitalize;
+    background: url('pattern\ \(5\).png');
+}
+.intro a{
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: 10px;
+    background-color: #202020;
+    padding: 10px;
+    color: #ccc;
+}
+.intro ul li{
+    display: inline-block;
+}
+.intro ul li img{
+    margin-top: 80px;
+    width: 60px;
+    height: 60px;
+}
+.b1,.b2,.b3{
+    width:30%;
+    background-color: #111;
+    height: 100px;
+    display: inline-block;
+    margin-top: 10px;
+    color: #eee;
+    padding-top: 25px;
+}
+.pro img{
+    width: 60%;
+}
+.pro{
+    background-color: #eee;
+    height: 90vh;
+}
+.pro .ptitle{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 3%;
+}
+.pbody h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:2.8rem;
+    margin-bottom: 5%;
+}
+.pbody h3{
+    margin-top: 5%;
+    font-size: 1.2rem;
+}
+.pp{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 5%;
+}
+.foot{
+    height: auto;
+    padding: 10px;
+    background-color: #111;
+    color: #eee;
+    display: flex;
+    text-align: left;
+    align-items: center;
+    align-content: space-between;
+    font-size: 18px;
+    font-family:'Courier New', Courier, monospace;
+    display: inline-block;
+
+}
+    .contact{
+      text-align:left;
+      background-color: #333;
+      padding-top: 70px;
+      padding-bottom: 50px;
+      color: #eee;
+      font-size: 1.2rem;
+      padding-left:10px;
+      align-items: center;
+      justify-content: center;
+   }
+   .contact input{
+      height: 30px;
+      padding-top:10px;
+      margin-top:15px;
+   }
+   .contact a{
+       text-decoration: none;
+       background-color: #999;
+       color: #111;
+       margin-top: 16px;
+       padding: 8px;
+       border-radius: 8px;
+   }
+   .about{
+     background-color: #333;
+     color: #eee;
+     font-size: 1.2rem;
+     padding-top:5%;
+     text-align:left;
+     padding-left:10px;
+   }
+   video{
+    width: 100%;
+    height: auto;
+  }
+  .if{
+      height: 700px;
+      height: 500px;
+  }
+  .about h1{
+  text-align:center;
+  }
+  .contact h1{
+  text-align:center;
+  }
+  .contact input{
+  width:40%;
+  }
+
+
+@media (min-width: 501) {
+  .foot{
+      height: 1000px;
+  }
+}
+
+@media(max-width: 500px){
+    .nav{
+        display: none;
+    }
+    .logo{
+        width:80%;
+        font-size: 1.8rem;
+    }
+    .foot{
+      height: auto;
+    }
+    .ic{
+        display: block;
+        width: 20%;
+        color: #fff;
+        cursor: pointer;
+    }
+    .intro h1{
+        font-size: 3rem;
+    }
+    .contactDetails1{
+      display: none;
+    }
+    .navmob{
+        display: none;
+        position: absolute;
+        top: 10vh;
+        width: 50%;
+        background-color: #111;
+        height: 90vh;
+        text-align: center;
+        font-size: 1.5rem;
+
+    }
+    .navmob ul li{
+        list-style-type: none;
+        padding: 10%;
+
+    }
+    .navmob ul li a{
+        text-decoration: none;
+        color: #eee;
+        padding: 8px;
+        text-transform: capitalize;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .img{
+        display: none;
+    }
+    .intro{
+        width: 90%;
+        padding-left: 10%;
+    }
+    .b1,.b2,.b3{
+        display: flex;
+        width: 90%;
+        justify-content: baseline;
+        align-items: center;
+        color: #fff;
+        padding-top: 0px;
+    }
+
+    .offers{
+       flex-wrap: wrap;
+    }
+    .mapouter{
+      height:300px;
+      width:300px;
+      align: right;
+
+      }
+
+    .b1,.b2,.b3 h2{
+        color: #eee;
+    }
+    .pro img{
+        width: 95%;
+    }
+.contact input{
+width:80%;
+}
+    .if{
+        height: 300px;
+    }
+.navmob,.nav{
+text-transform:uppercase;
+}
+
+}
