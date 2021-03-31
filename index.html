@@ -1,273 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Agency</title>
-    <script src="jquery.js"></script>
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
-
-        }
-        .header{
-            height: 10vh;
-            background-color: #111;
-            display: flex;
-            align-items:center;
-        }
-        .logo{
-            width: 40%;
-            color: #eee;
-            font-size: 2rem;
-            margin-left: 10%;
-            font-weight: 900;
-            font-family: 'Courier New', Courier, monospace;
-        }
-        .nav{
-            width: 60%;
-            text-align: right;
-        }
-        .nav ul li{
-            display: inline-block;
-            list-style-type: none;
-            margin-right: 10%;
-        }
-        .nav ul li a{
-            text-decoration: none;
-            font-weight: 600;
-            color: #999;
-            font-size: 1.2rem;
-        }
-        .navmob{
-            display: none;
-        }
-        .ic{
-            display: none;
-        }
-        .body{
-            width: 100%;
-            height: 90vh;
-            background-color: #eee;
-        }
-        .img,.intro{
-            width: 48%;
-            float: left;
-            height: 90vh;
-        }
-        .img{
-                 width: 50%;
-            background-color:#eee;
-        }
-        .intro{
-            height: 80vh;
-            padding-top: 10vh;
-            padding-left:2%;
-            background-color:#eee;
-            color: black;
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            font-size: 1.7rem;
-            text-transform: capitalize;
-            background: url('pattern\ \(5\).png');
-        }
-        .intro a{
-            font-size: 1.2rem;
-            text-decoration: none;
-            border-radius: 10px;
-            background-color: #202020;
-            padding: 10px;
-            color: #ccc;
-        }
-        .intro ul li{
-            display: inline-block;
-        }
-        .intro ul li img{
-            margin-top: 80px;
-            width: 60px;
-            height: 60px;
-        }
-        .b1,.b2,.b3{
-            width:30%;
-            background-color: #111;
-            height: 100px;
-            display: inline-block;
-            margin-top: 10px;
-            color: #eee;
-            padding-top: 25px;
-        }
-        .pro img{
-            width: 60%;
-        }
-        .pro{
-            background-color: #eee;
-            height: 90vh;
-        }
-        .pro .ptitle{
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            margin: 3%;
-        }
-        .pbody h1{
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            font-size:2.8rem;
-            margin-bottom: 5%;
-        }
-        .pbody h3{
-            margin-top: 5%;
-            font-size: 1.2rem;
-        }
-        .pp{
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            margin: 5%;
-        }
-        .foot{
-            height: 50vh;
-            background-color: #111;
-            color: #eee;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 3.5rem;
-            font-family:'Courier New', Courier, monospace;
-                   }
-            .contact{
-          text-align:left;
-                background-color: #333;
-                padding-top: 70px;
-                padding-bottom: 50px;
-                color: #eee;
-                font-size: 1.2rem;
-padding-left:10px;
-                   }
-                   .contact input{
-             
-                       height: 30px;
-padding-top:10px;
-margin-top:15px;
-                   }
-                   .contact a{
-                       text-decoration: none;
-                       background-color: #999;
-                       color: #111;
-                       margin-top: 16px;
-                       padding: 8px;
-                       border-radius: 8px;
-                   }
-        .about{
-   
-            background-color: #333;
-            color: #eee;
-            font-size: 1.2rem;
-padding-top:5%;
-text-align:left;
-padding-left:10px;
-
-            
-
-        }
-        video{
-            width: 100%;
-            height: auto;
-        }
-        .if{
-            height: 700px;
-            height: 500px;
-        }
-.about h1{
-text-align:center;
-}
-.contact h1{
-text-align:center;
-}
-.contact input{
-width:40%;
-}
-     @media only screen  and (max-width: 500px){
-            .nav{
-                display: none;
-            }  
-            .logo{
-                width:80%;
-                font-size: 1.8rem;
-            }
-            .ic{
-                display: block;
-                width: 20%;
-                color: #fff;
-                cursor: pointer;
-            }
-            .intro h1{
-                font-size: 3rem;
-            }  
-            .navmob{
-                display: none;
-                position: absolute;
-                top: 10vh;
-                width: 50%;
-                background-color: #111;
-                height: 90vh;
-                text-align: center;
-                font-size: 1.5rem;
-
-            }  
-            .navmob ul li{
-                list-style-type: none;
-                padding: 10%;
-
-            } 
-            .navmob ul li a{
-                text-decoration: none;
-                color: #eee;
-                padding: 8px;
-                text-transform: capitalize;
-                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            }
-            .img{
-                display: none;
-            }
-            .intro{
-                width: 90%;
-                padding-left: 10%;
-            }
-            .b1,.b2,.b3{
-                display: flex;
-                width: 90%;
-                justify-content: baseline;
-                align-items: center;
-                color: #fff;
-                padding-top: 0px;
-            }
-            .b1,.b2,.b3 h2{
-                color: #eee;
-            }
-            .pro img{
-                width: 95%;
-            }
-.contact input{
-width:80%;
-}
-            .if{
-                height: 300px;
-            }
-.navmob,.nav{
-text-transform:uppercase;
-}
-
-        }
-        
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Agency</title>
+  <script src="jquery.js"></script>
+  <link rel="stylesheet" href="index.css">
 </head>
 <body>
     <div class="header">
-        <div class="logo">Softwares Inc</div>
+        <div class="logo">Spicy Web</div>
         <div class="nav">
             <ul>
-                <li><a href="#">home</a></li>
-                <li><a href="#about">about</a></li>
-                <li><a href="#contact">contact</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
-        <div class="ic">
+        <div class="ic" style="overflow-x: hidden;">
             <img src="https://img.icons8.com/ultraviolet/40/000000/menu--v3.png" alt="">
         </div>
 
@@ -281,7 +31,7 @@ text-transform:uppercase;
     </div>
 
     <div class="body">
-        <div class="img">
+        <div class="img" style="overflow-x: hidden;">
             <img src="https://www.vertical-leap.uk/wp-content/uploads/2019/10/vl-screens.png" alt="" srcset="">
         </div>
         <div class="intro">
@@ -298,6 +48,36 @@ text-transform:uppercase;
             </div>
         </div>
     </div>
+    <br>
+    <div class="offers" style="display: flex; height: 40%; background-color: #FDF5E6; shape-outside: margin-box;">
+      <div class="elementor-image">
+        <img style="height:90% !important; width:90% !important;" src="https://webcares.in/wp-content/uploads/2021/02/website-offer-1.gif" class="attachment-large size-large" alt="" loading="lazy">
+      </div>
+
+      <div class="elementor-text-editor elementor-clearfix" style="vertical-align: middle;padding: 5%">
+        <h1 class="offerh" align="center"><font color="#B7410E">WELCOME OFFER</font></h1>
+
+        <center>
+        <hr color="black" width="80% " align="center"></hr>
+      </center>
+      <br>
+        <p style="font-size: 20px; padding: 10px;">
+            <font size="5" style="text-align: justify;">SPICY WEB – Digital Marketing Company in Kodad Offering you with
+          </font><font size="4"> BEST WEBSITE DESIGNING OFFERS</font>
+
+        </p>
+        <p style="font-size: 20px">
+          Get fully customized website plus free 1 year fast hosting at just ₹3000
+          <strong>.</strong>
+        </p>
+        <br>
+        <span style="font-size: 20px">
+        <center>
+          <button style="background: #F3E5AB; border-radius: 10%; border: none; padding: 10px;" type="button" name="button">View Offer Prices</button>
+          </center>
+        </span>
+      </div>
+    </div>
 
     <div class="body">
         <center>
@@ -306,15 +86,15 @@ text-transform:uppercase;
                 <h2>Stand up</h2>
                 Doind stanup on every day basis
                     making this awesome.
-                            </div>
+            </div>
             <div class="b2">
                 <h2>Weekly Meetings</h2>
                 conducting meetings weekly to get connected.
-                            </div>
-                            <div class="b3">
-                                <h2>User testing</h2>
-                                apps will be test over time untill it working correctly
-                            </div>   
+            </div>
+            <div class="b3">
+              <h2>User testing</h2>
+              apps will be test over time untill it working correctly
+            </div>
             <div class="pro">
                 <h1 class='ptitle'>Projects</h1>
                 <div class="pimg">
@@ -338,37 +118,80 @@ text-transform:uppercase;
                     <h3>online presentation platform</h3>
                     <h1>Mustly</h1>
                 </div>
-                <h1>Campus tour :</h1>
+                <BR>
                 <div class="video">
                     <iframe  class="if" width="100%" src="https://www.youtube.com/embed/2eKrahtDk70" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-                <div class="about" id="about">
-                    <h1>About :</h1>
+                <div style="padding: 30px" class="about" id="about">
+                    <h1>About Us </h1>
                     Hi, I am the owner of software it solutions
                     and open source production industry.We create web and
                     mobile app that are responsive across the platforms.
-                    the apps we create are tested and protected.We ensure user ex
-                    perince .We produce production quality products.It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+                    the apps we create are tested and protected.We ensure best user experince .Working with a broad spectrum of clients, Spicy Web delivers creative work that drives action and generates tangible results. From the design and development of a custom website to the strategic planning and management of ongoing high-performance marketing, our team is focused on building lasting relationships that inspire successful&nbsp;work.
                     </div>
-    
-                <div class="contact" id="contact">
-                    <h1>Contact me :</h1><br>
-                    Enter your email :<br>
-                    <input type="text"><br><br>
-                    Enter message : <br>
-                    <input type="text"><br><br>
+
+                    <br>
+
+                <div align="center" class="contact" id="contact">
+                    <center>
+                    <h1>Contact </h1><br>
+                    <input align="center" type="text" style="width: 50% !important" placeholder="Enter your e-mail id"><br><br>
+
+                    <textarea style="width: 50% !important" placeholder="Enter your message ...." cols="38" rows="5"></textarea><br><br>
                     <a href="#">send</a>
+                    </center>
+                </div>
+                <br>
+
+
+                <div class="foot" style="display: flex; flex-flow: wrap; align-content:space-between;">
+                    <div class="contactDetails" style="vertical-align:bottom; padding: 30px;">
+                      <h3><font face="Helvetica">Contact:</font><h3><br>
+                      19-1-1/7,<br>
+                      SRIRAM NAGAR,<br>
+                      MELLACHERUVU,<br>
+                      KODAD, TELANGANA,<br>
+                      PINCODE:- 508246.
+                      <br>
+                      <br>
+                      E-MAIL:- webagency@gmail.com
+                    </div>
+                    <div class="mapouter" align="right">
+                      <div class="gmap_canvas">
+                        <iframe style="padding: 5px;width: 90% !important"  height="300" id="gmap_canvas" src="https://maps.google.com/maps?q=mhil,%20sri%20nagar%20colony,%20508246&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                        <style>.mapouter{position:relative;text-align:right;height:300;width:auto;}</style><style>.gmap_canvas {overflow:hidden;background:none!important;height:300;width:auto;}</style></div></div>
+                        <div class="contactDetails1" style="vertical-align:bottom; margin:0px; padding: 10px;">
+                          <h3><font face="Helvetica">Office - Timmings:</font><h3><br>
+                          Week Days - O 06:00P.M<br>
+                          Week Ends - O 12:30P.M<br>
+                          <br>
+
+                        </DIV>
+                        <br>
+                        <DIV class="contactDetails2" style="vertical-align:bottom; padding: 20px;">
+
+                          &#128222;&nbsp;<font size="5">PHONE NUMBER:</font><br>
+
+                          &nbsp;&nbsp;&nbsp;<font size="4">08683 226395</font>
+
+                        </div>
+
 
                 </div>
-                
-                <div class="foot">
-                    Softwares Inc
+                <div style="background-color: yellow; text-align: center; height: 50px;" class="elementor-element elementor-element-4cc7f3f elementor-widget elementor-widget-text-editor" data-id="4cc7f3f" data-element_type="widget" data-widget_type="text-editor.default">
+                <div class="elementor-widget-container">
+                <div class="elementor-text-editor elementor-clearfix"><p style="vertical-align: middle; font-size: 20px; font-weight: 200;"><br>Spicy Web © 2021. All rights reserved.</p></div>
                 </div>
-                
-            </div>   
-                      
-            </center>
+                </div>
+
+              </center>
+
+
+
+          </div>
+
 
     </div>
+
     <script>
         $(document).ready(function(){
             $('.ic').click(function(){
@@ -377,7 +200,7 @@ text-transform:uppercase;
             $('.navmob a').click(function(){
                 $('.navmob').slideToggle();
             });
-            
+
         });
     </script>
 </body>
